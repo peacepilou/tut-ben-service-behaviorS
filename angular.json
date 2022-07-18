@@ -123,6 +123,10 @@
               "devServerTarget": "how-to-pass-data-through-a-service:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

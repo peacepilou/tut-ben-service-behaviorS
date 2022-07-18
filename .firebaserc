@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "stripe-test-js-pur": {
+      "hosting": {
+        "how-to-pass-data-through-a-service": [
+          "stripe-test-js-pur"
+        ]
+      }
+    }
+  }
+}

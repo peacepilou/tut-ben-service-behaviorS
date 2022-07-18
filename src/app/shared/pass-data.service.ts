@@ -7,7 +7,6 @@ import { BehaviorSubject } from 'rxjs';
 export class PassDataService {
 
   storeDataFromAComponentForBComponent: BehaviorSubject<number> = new BehaviorSubject(0);
-  storeDataFromAComponentForBComponent2: number = 0;
-
+  
   constructor() { }
 }

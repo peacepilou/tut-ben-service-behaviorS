@@ -1,0 +1,30 @@
+<div *ngIf="stripeStatus == 'success'">
+    <h1>Thanks for your order!</h1>
+    <p>
+        We appreciate your business!
+    </p>
+</div>
+
+<div *ngIf="stripeStatus == 'cancel'">
+    <h1>Transaction cancelled!</h1>
+    <p>
+        Please select an item to purchase.
+    </p>
+</div>
+
+<button *ngIf="stripeStatus != ''"  color="primary" (click)="reloadHome()">
+    <span>Reload Home</span>
+</button>
+
+
+<div *ngIf="stripeStatus == ''" style="display: flex;">
+    <div *ngFor="let item of clothes; let i = index" style="flex: 1 1 auto;">
+        <img [src]=item.image>
+        <h2>{{ item.name }}</h2>
+        <h3>${{ item.price }}</h3>
+        <button id="checkout-button" (click)='createProduct(item.id)'>Créer produit</button>
+        <button id="checkout-button" (click)='getProduct(item.id)'>Récupérer produit</button>
+        <button id="checkout-button" (click)='proceedToCheckout(item.id)'>Payer produit</button>
+    </div>
+</div>
+

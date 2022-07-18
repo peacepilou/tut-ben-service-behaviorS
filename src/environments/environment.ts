@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyA_PzH8IghZSeoS08uF153Q6uVUM86QbTY",
+    authDomain: "stripe-test-js-pur.firebaseapp.com",
+    projectId: "stripe-test-js-pur",
+    storageBucket: "stripe-test-js-pur.appspot.com",
+    messagingSenderId: "976457009102",
+    appId: "1:976457009102:web:948b219e9ccc60b5560d9f"
+  },
+  stripe: {
+    key: 'pk_test_51LMLQNBavC1HH3X6jj8LVKl9SoqHIPpkHeFeOjIOp56l72a3oXevBrkOulJzGfc756ZN1oZ9usHJbCIo0oKOX7V9006mRsEZai'
+  }  
 };
 
 /*
